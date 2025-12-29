@@ -51,3 +51,4 @@ https://discord.com/channels/332362513368875008/1448382845692416000
 ## License
 
 MIT
+# Updated contributors trigger
