@@ -2,7 +2,7 @@
   "id": "draw-steel-conduit-prayer-oneroll",
   "title": "Draw Steel: Conduit Prayer",
   "description": "A clean, refactored implementation that properly integrates with Draw Steel's resource system for Conduit prayer mechanics.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "12",
     "verified": "13"
@@ -17,8 +17,8 @@
     "scripts/conduit-prayer.js"
   ],
   "socket": true,
-  "manifest": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v0.1.0/module.json",
-  "download": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v0.1.0/module.zip",
+  "manifest": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v1.0.0/module.json",
+  "download": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v1.0.0/module.zip",
   "url": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll",
   "license": "MIT",
   "changelog": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases",
