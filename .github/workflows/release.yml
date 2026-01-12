@@ -46,10 +46,10 @@ jobs:
             ### Installation
             In Foundry VTT, go to **Game Settings** → **Manage Modules** → **Install Module** and enter:
             ```
-            https://github.com/stgreenb/draw-steel-conduit-prayer/releases/latest/download/module.json
+            https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/latest/download/module.json
             ```
 
             ### Changes
-            See [CHANGELOG.md](https://github.com/stgreenb/draw-steel-conduit-prayer/blob/main/module/CHANGELOG.md) for detailed changes.
+            See [CHANGELOG.md](https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/blob/main/module/CHANGELOG.md) for detailed changes.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
