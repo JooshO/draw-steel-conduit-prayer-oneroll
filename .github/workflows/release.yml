@@ -3,6 +3,10 @@ name: Release
 on:
   workflow_dispatch:
       inputs:
+        target:
+          description: The tag or reference to use
+          required: false
+          default: "v*"
         tags:
           description: 'Test scenario tags'
           required: false
