@@ -1,26 +1,26 @@
 {
-  "id": "draw-steel-conduit-prayer",
+  "id": "draw-steel-conduit-prayer-oneroll",
   "title": "Draw Steel: Conduit Prayer",
   "description": "A clean, refactored implementation that properly integrates with Draw Steel's resource system for Conduit prayer mechanics.",
-  "version": "1.1.0",
+  "version": "0.1.0",
   "compatibility": {
     "minimum": "12",
     "verified": "13"
   },
   "authors": [
     {
-      "name": "Steve Greenberg",
-      "url": "https://github.com/stgreenb"
+      "name": "JooshO",
+      "url": "https://github.com/JooshO"
     }
   ],
   "scripts": [
     "scripts/conduit-prayer.js"
   ],
   "socket": true,
-  "manifest": "https://github.com/stgreenb/draw-steel-conduit-prayer/releases/download/v1.1.0/module.json",
-  "download": "https://github.com/stgreenb/draw-steel-conduit-prayer/releases/download/v1.1.0/module.zip",
-  "url": "https://github.com/stgreenb/draw-steel-conduit-prayer",
+  "manifest": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v0.1.0/module.json",
+  "download": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/download/v0.1.0/module.zip",
+  "url": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll",
   "license": "MIT",
-  "changelog": "https://github.com/stgreenb/draw-steel-conduit-prayer/releases",
-  "bugs": "https://github.com/stgreenb/draw-steel-conduit-prayer/issues"
+  "changelog": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases",
+  "bugs": "https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/issues"
 }
