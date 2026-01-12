@@ -29,7 +29,6 @@ A clean, refactored implementation that properly integrates with Draw Steel's re
 4. Click **Install** and enable the module
 
 ## Usage
-
 1. Start combat with a Conduit character
 2. Prayer dialog appears automatically at turn start (only on owning client)
 3. Choose to pray or skip
