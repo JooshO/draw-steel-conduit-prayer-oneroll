@@ -1,26 +1,7 @@
 name: Release
 
 on:
-  workflow_dispatch:
-      inputs:
-        target:
-          description: The tag or reference to use
-          required: false
-          default: "v*"
-        tags:
-          description: 'Test scenario tags'
-          required: true
-          type: string
-        logLevel:
-          description: 'Log level'
-          required: true
-          default: 'warning'
-          type: choice
-          options:
-          - info
-          - warning
-          - debug
-  push:
+  pull_request:
     tags:
       - 'v*'
 
