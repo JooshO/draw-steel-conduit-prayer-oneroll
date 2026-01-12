@@ -5,7 +5,7 @@ A clean, refactored implementation that properly integrates with Draw Steel's re
 ## Features
 
 - **Clean Architecture**: Simplified codebase with proper Draw Steel integration
-- **Correct Prayer Mechanics**: Implements official two-roll prayer system:
+- **Correct Prayer Mechanics**: Implements one-roll prayer system:
   - Prayer 1: +1 piety + 1d6+level psychic damage (unblockable)
   - Prayer 2: +1 piety (safe)
   - Prayer 3: +2 piety + domain effect activation
@@ -24,7 +24,7 @@ A clean, refactored implementation that properly integrates with Draw Steel's re
 2. Click **Add Module** → **Install Module**
 3. Enter the Manifest URL:
    ```
-   https://github.com/stgreenb/draw-steel-conduit-prayer/releases/latest/download/module.json
+   https://github.com/stgreenb/draw-steel-conduit-prayer-oneroll/releases/latest/download/module.json
    ```
 4. Click **Install** and enable the module
 
@@ -35,18 +35,8 @@ A clean, refactored implementation that properly integrates with Draw Steel's re
 3. Choose to pray or skip
 4. Piety gains are applied using Draw Steel's native resource system
 
-## Changes in v1.1.0
-
-- **Refactored Implementation**: Complete code cleanup and architecture improvements
-- **Fixed Prayer Mechanics**: Correct piety gains for all prayer results
-- **Proper Resource Integration**: Now uses Draw Steel's `/gain` enricher system
-- **Removed Complexity**: Eliminated socket communication and redundant detection methods
-- **Improved Performance**: Cleaner, more maintainable codebase
-
-## Discord
-
-Join the discussion about this and other Foundry modules in the dedicated thread:
-https://discord.com/channels/332362513368875008/1448382845692416000
+## Changes in fork
+Switch to oneroll
 
 ## License
 
