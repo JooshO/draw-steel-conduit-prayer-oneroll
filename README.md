@@ -24,7 +24,7 @@ A clean, refactored implementation that properly integrates with Draw Steel's re
 2. Click **Add Module** → **Install Module**
 3. Enter the Manifest URL:
    ```
-   https://github.com/stgreenb/draw-steel-conduit-prayer-oneroll/releases/latest/download/module.json
+   https://github.com/JooshO/draw-steel-conduit-prayer-oneroll/releases/latest/download/module.json
    ```
 4. Click **Install** and enable the module
 
