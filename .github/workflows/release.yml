@@ -9,8 +9,8 @@ on:
           default: "v*"
         tags:
           description: 'Test scenario tags'
-          required: false
-          type: boolean
+          required: true
+          type: string
         logLevel:
           description: 'Log level'
           required: true
