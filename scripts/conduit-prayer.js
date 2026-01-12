@@ -77,57 +77,45 @@ async function handlePrayerFullFlow(actor) {
       speaker: ChatMessage.getSpeaker({ actor })
     });
 
-    // Roll 1d3 for prayer effects with dice visualization
-    const prayerRoll = new Roll("1d3");
-    await prayerRoll.evaluate();
-    await prayerRoll.toMessage({
-      flavor: `${actor.name} - Prayer Effects Roll`,
-      speaker: ChatMessage.getSpeaker({ actor })
-    });
-
     // Get results after dice are shown
     const baseline = baselineRoll.total;
-    const prayerResult = prayerRoll.total;
 
     // Calculate total piety gain
     let totalGain = baseline;
     let htmlContent = "";
 
-    if (prayerResult === 1) {
+    if (baseline === 1) {
       // Prayer result 1: +1 piety + psychic damage
       totalGain = baseline + 1;
 
       htmlContent = `<div class="dice-roll ds-conduit-prayer">
         <div class="header" style="color: var(--draw-steel-c-failure);">THE GODS ARE ANGERED!</div>
         <div class="prayer-details">
-          <p><strong>Baseline Roll:</strong> ${baseline}</p>
           <p><strong>Prayer Roll:</strong> 1</p>
           <p><strong>Total Piety Gain:</strong> +${totalGain}</p>
           <p><strong>Psychic Damage:</strong> [[/damage 1d6+${level} psychic]] (unblockable)</p>
         </div>
       </div>`;
 
-    } else if (prayerResult === 2) {
+    } else if (baseline === 2) {
       // Prayer result 2: +1 piety (safe)
       totalGain = baseline + 1;
 
       htmlContent = `<div class="dice-roll ds-conduit-prayer">
         <div class="header" style="color: var(--draw-steel-c-tan);">DIVINE GRACE</div>
         <div class="prayer-details">
-          <p><strong>Baseline Roll:</strong> ${baseline}</p>
           <p><strong>Prayer Roll:</strong> 2</p>
           <p><strong>Total Piety Gain:</strong> +${totalGain}</p>
         </div>
       </div>`;
 
-    } else if (prayerResult === 3) {
+    } else if (baseline === 3) {
       // Prayer result 3: +2 piety + domain effect
       totalGain = baseline + 2;
 
       htmlContent = `<div class="dice-roll ds-conduit-prayer">
         <div class="header" style="color: var(--draw-steel-c-success);">DIVINE FAVOR!</div>
         <div class="prayer-details">
-          <p><strong>Baseline Roll:</strong> ${baseline}</p>
           <p><strong>Prayer Roll:</strong> 3</p>
           <p><strong>Total Piety Gain:</strong> +${totalGain}</p>
           <p><strong>Domain Effect:</strong> Choose one to activate!</p>
